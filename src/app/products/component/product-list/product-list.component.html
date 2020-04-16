@@ -4,8 +4,8 @@
       <mat-icon>add</mat-icon>
     </button>
   </div>
-  <div class="card-list" *ngIf="products$ | async as products">
-    <mat-card class="example-card" *ngFor="let product of products">
+  <div class="card-list">
+    <mat-card class="example-card" *ngFor="let product of products$ | async">
         <img mat-card-image src="{{ product.imageUrl }}" alt="Photo of a product">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
