@@ -28,6 +28,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -92,6 +93,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,11 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngrx-products"
+    }
+  },
+  "defaultProject": "ngrx-products",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics",
+    "analytics": "5df36ddd-6f86-4ef2-91b6-b7ded7535b14"
+  }
 }

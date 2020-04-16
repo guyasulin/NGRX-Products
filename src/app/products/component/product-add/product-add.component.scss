@@ -1,0 +1,38 @@
+.product-add {
+  width: 50%;
+  margin: 35px auto 0;
+
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .half-width {
+    display: flex;
+    justify-content: space-between;
+
+    .item-half-width {
+      flex: 1;
+
+      &:first-child {
+        margin-right: 10%;
+      }
+    }
+  }
+
+  .footer-btn {
+      .btn-add {
+        background: #0080007d;
+       color: white;
+      }
+
+      .btn-back {
+        background-color: #0091EA;
+        color: white;
+       }
+  }
+}

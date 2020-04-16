@@ -1,0 +1,32 @@
+.product-list {
+    padding: 35px 20px;
+
+    .add-product {
+        .btn-add {
+            background: #0080007d;
+            color: white;
+
+        }
+    }
+    
+    .card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 67%;
+        margin: auto;
+
+        .mat-card-image {
+            height: 170px;
+            display: block;
+        }
+
+        .example-card {
+            width: 250px;
+            min-width: 31%;
+             margin: 25px 0;
+            box-sizing: border-box;
+          }
+    }
+
+}

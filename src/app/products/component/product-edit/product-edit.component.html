@@ -1,0 +1,43 @@
+<div class="product-edit">
+  <div class="title">
+    <span>Edit Product</span>
+  </div>
+  <form #f="ngForm" (ngSubmit)="onSubmit()">
+    
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Product Name</mat-label>
+      <input matInput type="text" name="name" placeholder="name" [(ngModel)]="model.name">
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput type="text" name="description" placeholder="description" [(ngModel)]="model.description"></textarea>
+    </mat-form-field>
+
+    <div  class="half-width">
+      <mat-form-field class="item-half-width" appearance="fill">
+        <mat-label>Price</mat-label>
+          <input matInput type="number" name="price" placeholder="price" [(ngModel)]="model.price">
+        </mat-form-field>
+  
+        <mat-form-field class="item-half-width" appearance="fill">
+          <mat-label>Quantity</mat-label>
+          <input matInput type="number" name="quantity" placeholder="quantity" [(ngModel)]="model.quantity">
+        </mat-form-field>
+    </div>
+
+      <mat-form-field class="full-width" appearance="fill">
+          <mat-label>Image Url</mat-label>
+          <input matInput type="text" name="imageUrl" placeholder="imageUrl" [(ngModel)]="model.imageUrl">
+        </mat-form-field>
+
+        <div class="footer-btn">
+          <button mat-raised-button class="btn-back" type="submit" [routerLink]="['/product/list']">Back To List
+            <mat-icon>keyboard_backspace</mat-icon>
+          </button>
+          <button mat-raised-button class="btn-edit" type="submit" [disabled]="f.invalid">Edit Product
+            <mat-icon>edit</mat-icon>
+          </button>
+      </div>
+  </form>
+</div>
