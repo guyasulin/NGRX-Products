@@ -25,8 +25,6 @@ import { reducers } from './reducers';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { environment } from '../environments/environment';
-import * as fromProduct from './products/store/product.reducer'
-import { reducer } from './products/store/product.reducer';
 
 @NgModule({
   declarations: [
@@ -45,7 +43,7 @@ import { reducer } from './products/store/product.reducer';
     MatIconModule,
     MatToolbarModule,
     MatSidenavModule,
-    StoreModule.forRoot(fromProduct.reducer, {}),
+    StoreModule.forRoot(reducers, {}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
