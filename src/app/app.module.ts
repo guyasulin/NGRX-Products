@@ -44,12 +44,7 @@ import { environment } from '../environments/environment';
     MatToolbarModule,
     MatSidenavModule,
     StoreModule.forRoot(reducers, {}),
-    StoreDevtoolsModule.instrument({
-      maxAge: 25,
-      logOnly: false,
-    }),
     EffectsModule.forRoot([]),
-    StoreModule.forRoot({}, {}),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [ProductService],
