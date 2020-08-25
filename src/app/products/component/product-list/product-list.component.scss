@@ -12,7 +12,7 @@
     .card-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        // justify-content: space-between;
         max-width: 67%;
         margin: auto;
 
@@ -23,8 +23,7 @@
 
         .example-card {
             width: 250px;
-            min-width: 31%;
-             margin: 25px 0;
+             margin: 25px;
             box-sizing: border-box;
           }
     }

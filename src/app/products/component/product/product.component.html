@@ -12,18 +12,8 @@
         <h4> {{ product.name }} </h4>
         <p>{{ product.description }} </p>
 
-        <div>
-            <button mat-raised-button color="warn" (click)="deleteProduct(product.id)">Delete
-              <mat-icon>delete</mat-icon>
-            </button>
-            <button mat-raised-button [routerLink]="['/product/edit', product.id]" color="primary">Edit
-              <mat-icon>edit</mat-icon>
-            </button>
-        </div>
-      </div>
-
-      <div class="data-number">
-        <div>
+        <div class="data-number">
+          <div>
             <mat-label>Price: </mat-label>
             {{ product.price | currency  }}
           </div>
@@ -31,8 +21,17 @@
             <mat-label>Quantity: </mat-label>
             {{ product.quantity }}
           </div>
+        </div>
       </div>
 
+      <div>
+        <button mat-raised-button color="warn" (click)="deleteProduct(product.id)">Delete
+          <mat-icon>delete</mat-icon>
+        </button>
+        <button mat-raised-button [routerLink]="['/product/edit', product.id]" color="primary">Edit
+          <mat-icon>edit</mat-icon>
+        </button>
+      </div>
     </div>
   </div>
 </div>

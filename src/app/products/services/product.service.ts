@@ -17,7 +17,7 @@ export class ProductService {
   getProducts(): Observable<ProductModel[]> {
     return this.http.get<ProductModel[]>(this.productsUrl).pipe(
       map(res => res),
-      tap(res => console.log(res)),
+      // tap(res => console.log(res)),
       catchError(this.handleError)
     )
   }
@@ -25,7 +25,7 @@ export class ProductService {
   getProduct(productId: string): Observable<ProductModel> {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' })
     return this.http.get<ProductModel>(this.productsUrl + productId, {headers}).pipe(
-      tap(data => console.log(JSON.stringify( productId))),
+      // tap(data => console.log(JSON.stringify( productId))),
       catchError(this.handleError)
     )
   }

@@ -2,7 +2,7 @@
     <mat-toolbar color="primary">
       <div fxShow="true" fxHide.gt-sm="true">
         <div (click)="sidenav.toggle()">
-          <mat-icon>menu</mat-icon>
+          <mat-icon class="icon-menu">menu</mat-icon>
         </div>
       </div>
       <span>NGRX</span> <span class="example-spacer"></span>
@@ -16,7 +16,7 @@
       <mat-sidenav #sidenav fxLayout="column">
         <div fxLayout="column">
           <div (click)="sidenav.toggle()" >
-            <mat-icon>close</mat-icon>
+            <mat-icon >close</mat-icon>
           </div>
           <div routerLink="/product/list" mat-button>Product</div>
         </div>
